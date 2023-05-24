@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #8bacaa;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+header {
+  background-color: #e76161;
+}
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.question_card {
+  background-color: #f99b7d;
+  border: solid 3px;
+  border-radius: 15%;
+  width: 70vw;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 30px;
+}
+
+.answer {
+  visibility: hidden;
+}
+
+.mark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #8bacaa;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.bookmarked {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #b04759;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.mark:hover {
+  background-color: #b04759;
+}
+
+.show {
+  align-self: center;
+  width: 60px;
+  border-radius: 10%;
+  background-color: black;
+  color: #e76161;
+}
+
+.hide {
+  align-self: center;
+  width: 60px;
+  border-radius: 10%;
+  background-color: #e76161;
+  color: black;
+}
+
+button:hover {
+  background-color: #b04759;
+  color: #8bacaa;
+}
+footer {
+  background-color: #e76161;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: row;
+  height: 40px;
+}
+
+a:nth-child(1) {
+  background-color: gray;
+  width: 40px;
+}
