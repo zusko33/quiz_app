@@ -34,7 +34,8 @@ main {
 }
 .question_card {
   background-color: #f99b7d;
-  border-radius: 5px;
+  border-radius: 10% / 50%;
+  box-shadow: 5px 5px rgb(226, 179, 132);
   width: 70vw;
   height: 20vh;
   position: relative;
@@ -90,7 +91,6 @@ p {
 .show {
   align-self: center;
   width: 70px;
-  border-radius: 90% 90% 0 0;
   background-color: #8bacaa;
   border-style: hidden;
 }
@@ -98,7 +98,6 @@ p {
 .hide {
   align-self: center;
   width: 70px;
-  border-radius: 90% 90% 0 0;
   background-color: #e76161;
   border-style: hidden;
 }
