@@ -69,8 +69,11 @@ p {
 }
 
 .answer-showed {
+  visibility: visible;
   color: darkslategray;
   text-shadow: 2px 2px 5px whitesmoke;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .mark {
