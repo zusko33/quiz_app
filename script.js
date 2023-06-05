@@ -1,23 +1,28 @@
 const mainElement = document.querySelector("main");
-const showButton = document.querySelector(".show");
-const hideButton = document.querySelector(".hide");
+const showButtons = document.querySelectorAll(".show");
+const hideButtons = document.querySelectorAll(".hide");
 const bookmarkButton = document.querySelector(".mark");
-const answer = document.querySelector('[data-js="answer-par"]');
+const answer = document.querySelector("[data-js='answer-par']");
+const card = document.querySelector(".question-card");
 
-showButton.addEventListener("click", () => {
-  console.log("klik");
-  answer.classList.remove("answer");
-  answer.classList.add("answer-showed");
-  showButton.classList.remove("show");
-  showButton.classList.add("hide");
-  showButton.innerHTML = "Hide Answer";
+showButtons.forEach(function (showButton) {
+  showButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("klik");
+    answer.classList.add("answer-showed");
+    showButton.remove();
+    // now create element hide button;
+    // try to do this for all paragraphs;
+  });
 });
-/*
-hideButton.addEventListener("click", () => {
-  answer.classList.remove("answer-showed");
-  answer.classList.add("answer");
-  hideButton.classList.remove("hide");
-  hideButton.classList.add("show");
-  hideButton.innerHTML = "Show Answer";
+
+hideButtons.forEach(function (hideButton) {
+  hideButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("klik");
+    answer.classList.add("answer");
+    hideButton.classList.remove("hide");
+    hideButton.classList.add("show");
+    hideButton.innerHTML = "Show Answer";
+  });
 });
-*/
