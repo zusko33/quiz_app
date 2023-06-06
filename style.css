@@ -101,6 +101,10 @@ p {
   background-color: #b04759;
 }
 
+.bookmarked:hover {
+  background-color: #8bacaa;
+}
+
 .show {
   align-self: center;
   width: 70px;
@@ -115,6 +119,7 @@ p {
   background-color: #e76161;
   border-style: hidden;
   grid-column: 3 / 3;
+  content: "Hide Answer";
 }
 
 button:hover {
