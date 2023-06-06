@@ -265,23 +265,44 @@ input:checked + .slider:before {
 
 /* Form */
 
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 form {
-  position: relative;
+  position: static;
   width: 60vh;
-  height: 60vh;
+  height: 90vh;
   margin: 0;
   padding: 1em;
   box-sizing: border-box;
-  display: grid;
-  gap: 2px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10% 25% 10% 25% 10% 10% 10%;
-}
-label {
-  justify-self: left;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
   align-self: center;
 }
+
+.form-card {
+  position: relative;
+  bottom: 30vh;
+}
+
+label {
+  text-align: left;
+}
 #subButton {
-  width: 20vw;
-  justify-self: center;
+  width: 10vw;
+  height: 5vh;
+  align-self: center;
+  text-align: center;
+}
+
+.form-p {
+  color: black;
+  font-size: 14px;
+  text-align: right;
+  text-shadow: none;
 }

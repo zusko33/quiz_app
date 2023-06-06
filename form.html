@@ -11,36 +11,44 @@
     <header>
       <h1 class="home">Add question</h1>
     </header>
-    <main>
-      <form>
-        <label for="your-question">Your question:</label>
+    <main class="form-main">
+      <form data-js="form">
+        <label for="yourQuestion">Your question:</label>
         <textarea
-          name="your-question"
-          id="your-question"
+          name="yourQuestion"
+          id="yourQuestion"
           type="text"
           maxlength="150"
           rows="5"
           cols="55"
           required
         ></textarea>
-        <label for="your-answer">Your answer:</label>
+        <p class="form-p" id="1par"></p>
+        <label for="yourAnswer">Your answer:</label>
         <textarea
-          name="your-answer"
-          id="your-answer"
+          name="yourAnswer"
+          id="yourAnswer"
           type="text"
           maxlength="150"
           rows="5"
           cols="55"
           required
         ></textarea>
+        <p class="form-p" id="2par"></p>
         <label for="tag">Tag:</label>
-        <input type="text" name="tag" id="tag" required />
+        <input
+          type="text"
+          name="tag"
+          id="tag"
+          placeholder="#tag-name"
+          required
+        />
         <button type="submit" id="subButton">SUBMIT</button>
       </form>
     </main>
     <footer>
       <nav>
-        <a href="#home">🏠</a>
+        <a href="index.html">🏠</a>
         <a href="bookmarks.html">✔️</a>
         <a href="form.html" style="background-color: gray; width: 40px">➕</a>
         <a href="profile.html">👤</a>
