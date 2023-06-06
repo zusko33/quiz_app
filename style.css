@@ -69,8 +69,11 @@ p {
 }
 
 .answer-showed {
+  visibility: visible;
   color: darkslategray;
   text-shadow: 2px 2px 5px whitesmoke;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .mark {
@@ -98,6 +101,10 @@ p {
   background-color: #b04759;
 }
 
+.bookmarked:hover {
+  background-color: #8bacaa;
+}
+
 .show {
   align-self: center;
   width: 70px;
@@ -112,6 +119,7 @@ p {
   background-color: #e76161;
   border-style: hidden;
   grid-column: 3 / 3;
+  content: "Hide Answer";
 }
 
 button:hover {
@@ -151,6 +159,9 @@ nav {
   flex-direction: row;
   height: 40px;
 }
+a {
+  text-decoration: none;
+}
 
 .profile_head {
   display: flex;
@@ -172,6 +183,8 @@ h2 {
 }
 
 h3 {
+  position: relative;
+  margin-top: 15vh;
   text-align: left;
   color: #b04759;
   text-shadow: 2px 2px 5px #f99b7d;
@@ -185,11 +198,11 @@ h3 {
 }
 
 .settings {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 40px;
-  margin-left: 20%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-self: center;
 }
 
 .switch {
@@ -250,4 +263,48 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Form */
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form {
+  position: static;
+  width: 60vh;
+  height: 90vh;
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-self: center;
+}
+
+.form-card {
+  position: relative;
+  bottom: 30vh;
+}
+
+label {
+  text-align: left;
+}
+#subButton {
+  width: 10vw;
+  height: 5vh;
+  align-self: center;
+  text-align: center;
+}
+
+.form-p {
+  color: black;
+  font-size: 14px;
+  text-align: right;
+  text-shadow: none;
 }
