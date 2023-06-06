@@ -159,6 +159,9 @@ nav {
   flex-direction: row;
   height: 40px;
 }
+a {
+  text-decoration: none;
+}
 
 .profile_head {
   display: flex;
@@ -258,4 +261,27 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Form */
+
+form {
+  position: relative;
+  width: 60vh;
+  height: 60vh;
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 25% 10% 25% 10% 10% 10%;
+}
+label {
+  justify-self: left;
+  align-self: center;
+}
+#subButton {
+  width: 20vw;
+  justify-self: center;
 }
