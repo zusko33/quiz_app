@@ -16,10 +16,17 @@ form.addEventListener("submit", (e) => {
   newAnswer.classList.add("answer-showed");
   const newTag = document.createElement("p");
   newTag.classList.add("tag1");
-  newCard.append(newQuestion, newAnswer, newTag);
+  const newButton = document.createElement("button");
+  newButton.classList.add("show");
+  const markButton = document.createElement("button");
+  markButton.classList.add("mark");
+  newCard.append(newQuestion, newAnswer, newTag, newButton, markButton);
   newQuestion.innerHTML = formElements.yourQuestion.value;
   newAnswer.innerHTML = formElements.yourAnswer.value;
   newTag.innerHTML = formElements.tag.value;
+  newButton.innerHTML = "Show answer";
+  markButton.innerHTML = "✔️";
+
   //   console.log(newCard);
   document.querySelector("main").append(newCard);
   document.querySelector("main").insertBefore(form, newCard);
@@ -35,7 +42,7 @@ form.addEventListener("input", (event) => {
     howManyQuestionStay > 1 ? "s" : ""
   } left`;
   par.innerText = message;
-  console.log(message);
+  // console.log(message);
 });
 
 form.addEventListener("input", (event) => {
@@ -47,5 +54,5 @@ form.addEventListener("input", (event) => {
     howManyAnswerStay > 1 ? "s" : ""
   } left`;
   par2.innerText = message2;
-  console.log(message2);
+  // console.log(message2);
 });
